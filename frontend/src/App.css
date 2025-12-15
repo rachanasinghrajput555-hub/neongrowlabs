@@ -1,34 +1,282 @@
-.App-logo {
-    height: 40vmin;
-    pointer-events: none;
+/* Neongrowlabs Minimalistic Light Theme with 3D Animations */
+
+.App {
+  min-height: 100vh;
+  background: var(--color-white);
+  color: var(--color-black);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
-    }
+/* Typography */
+.brand-display {
+  font-family: 'Sohne', sans-serif;
+  font-weight: 800;
+  font-size: clamp(4rem, 8vw, 10rem);
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
 }
 
-.App-header {
-    background-color: #0f0f10;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
+.hero-heading {
+  font-family: 'Sohne', sans-serif;
+  font-weight: 600;
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
 }
 
-.App-link {
-    color: #61dafb;
+.section-heading {
+  font-family: 'Sohne', sans-serif;
+  font-weight: 600;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  line-height: 1.125;
+  letter-spacing: -0.01em;
 }
 
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+.card-heading {
+  font-family: 'Sohne', sans-serif;
+  font-weight: 500;
+  font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+  line-height: 1.375;
+}
+
+.body-large {
+  font-family: 'Sohne', sans-serif;
+  font-weight: 400;
+  font-size: clamp(1rem, 2vw, 1.125rem);
+  line-height: 1.6;
+}
+
+.body-medium {
+  font-family: 'Sohne', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Light Color System */
+:root {
+  --color-black: #151515;
+  --color-white: #ffffff;
+  --color-off-white: #fafafa;
+  --color-light-grey: #f5f5f5;
+  --color-mid-grey: #e0e0e0;
+  --color-dark-grey: #717171;
+  --color-text-secondary: #666666;
+  --color-border: #e5e5e5;
+  
+  --color-primary: #6366f1;
+  --color-primary-light: #818cf8;
+  --color-accent-purple: #d987ff;
+  --color-accent-pink: #ff84e4;
+  --color-accent-blue: #60a5fa;
+  --color-accent-green: #78d692;
+  --color-accent-orange: #ff965a;
+  --color-accent-yellow: #fbbf24;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* 3D Perspective Setup */
+.perspective-container {
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+
+/* 3D Animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) translateZ(0px);
+  }
+  50% {
+    transform: translateY(-20px) translateZ(20px);
+  }
+}
+
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px) translateZ(0px) rotateZ(0deg);
+  }
+  50% {
+    transform: translateY(-30px) translateZ(30px) rotateZ(2deg);
+  }
+}
+
+@keyframes pulse3d {
+  0%, 100% {
+    transform: scale(1) translateZ(0px);
+  }
+  50% {
+    transform: scale(1.05) translateZ(20px);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px) translateZ(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) translateZ(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95) translateZ(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateZ(0);
+  }
+}
+
+@keyframes slideIn3d {
+  from {
+    opacity: 0;
+    transform: translateX(-50px) rotateY(-15deg);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) rotateY(0deg);
+  }
+}
+
+.float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.float-slow {
+  animation: floatSlow 8s ease-in-out infinite;
+}
+
+.pulse-3d {
+  animation: pulse3d 3s ease-in-out infinite;
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.7s ease-out forwards;
+}
+
+.fade-in {
+  animation: fadeIn 0.7s ease-out forwards;
+}
+
+.scale-in {
+  animation: scaleIn 0.5s ease-out forwards;
+}
+
+.slide-in-3d {
+  animation: slideIn3d 0.8s ease-out forwards;
+}
+
+.stagger-1 { animation-delay: 0.1s; }
+.stagger-2 { animation-delay: 0.2s; }
+.stagger-3 { animation-delay: 0.3s; }
+.stagger-4 { animation-delay: 0.4s; }
+.stagger-5 { animation-delay: 0.5s; }
+.stagger-6 { animation-delay: 0.6s; }
+
+/* 3D Card Effects */
+.card-3d {
+  transform-style: preserve-3d;
+  transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.card-3d:hover {
+  transform: translateY(-8px) rotateX(5deg) rotateY(-5deg) translateZ(20px);
+}
+
+.card-3d-tilt {
+  transform-style: preserve-3d;
+  transition: transform 0.4s ease;
+}
+
+.card-3d-tilt:hover {
+  transform: perspective(1000px) rotateY(10deg) rotateX(-5deg) scale(1.02);
+}
+
+/* Button 3D Effects */
+.button-3d {
+  transform-style: preserve-3d;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.button-3d:hover {
+  transform: translateY(-4px) translateZ(10px);
+  box-shadow: 0 12px 30px rgba(99, 102, 241, 0.3);
+}
+
+.button-3d:active {
+  transform: translateY(-2px) translateZ(5px);
+  box-shadow: 0 6px 20px rgba(99, 102, 241, 0.2);
+}
+
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-8px) translateZ(15px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.image-3d {
+  transform-style: preserve-3d;
+  transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.image-3d:hover {
+  transform: scale(1.05) rotateZ(-2deg) translateZ(20px);
+}
+
+.floating-element {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+  opacity: 0.5;
+  pointer-events: none;
+  animation: floatSlow 12s ease-in-out infinite;
+}
+
+.gpu-accelerated {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+  will-change: transform;
+}
+
+::selection {
+  background: var(--color-primary-light);
+  color: var(--color-white);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-light-grey);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary-light);
 }
