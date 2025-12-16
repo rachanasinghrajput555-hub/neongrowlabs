@@ -134,10 +134,8 @@ export const about = {
 export const contact = {
   email: "neongrowlabs@gmail.com",
   phone: "+91 7838399405",
-  address: "123 Innovation Street, Tech City, TC 12345",
+  address: "Dwarka Mor, Jain Road Gali No 21, Delhi - 110059",
   social: {
-    instagram: "https://instagram.com/neongrowlabs",
-    linkedin: "https://linkedin.com/company/neongrowlabs",
-    twitter: "https://twitter.com/neongrowlabs"
+    linkedin: "https://linkedin.com/company/neongrowlabs"
   }
 };
