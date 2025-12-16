@@ -107,7 +107,7 @@ export const testimonials = [
     position: "Founder, StartupHub",
     content: "The web development team delivered beyond expectations. Our new platform is fast, beautiful, and exactly what we envisioned.",
     rating: 5,
-    image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=150&h=150&fit=crop&q=80"
+    image: "https://customer-assets.emergentagent.com/job_neongrowlabs/artifacts/a1l1bgrm_Gemini_Generated_Image_weugvxweugvxweug.png"
   },
   {
     id: 3,
@@ -115,7 +115,7 @@ export const testimonials = [
     position: "Marketing Director, GrowthCo",
     content: "Their Meta Ads campaigns generated the highest ROI we've ever seen. Professional, data-driven, and results-focused.",
     rating: 5,
-    image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=150&h=150&fit=crop&q=80"
+    image: "https://customer-assets.emergentagent.com/job_neongrowlabs/artifacts/6velkru0_Gemini_Generated_Image_xiq35dxiq35dxiq3.png"
   }
 ];
 
