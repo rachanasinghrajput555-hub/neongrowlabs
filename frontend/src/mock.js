@@ -136,6 +136,6 @@ export const contact = {
   phone: "+91 7838399405",
   address: "Dwarka Mor, Jain Road Gali No 21, Delhi - 110059",
   social: {
-    instagram: "https://instagram.com/neongrowlabs"
+    instagram: "https://www.instagram.com/neongrowlabs?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
   }
 };
