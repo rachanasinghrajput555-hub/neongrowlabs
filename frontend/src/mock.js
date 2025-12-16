@@ -132,8 +132,8 @@ export const about = {
 };
 
 export const contact = {
-  email: "hello@neongrowlabs.com",
-  phone: "+1 (555) 123-4567",
+  email: "neongrowlabs@gmail.com",
+  phone: "+91 7838399405",
   address: "123 Innovation Street, Tech City, TC 12345",
   social: {
     instagram: "https://instagram.com/neongrowlabs",
