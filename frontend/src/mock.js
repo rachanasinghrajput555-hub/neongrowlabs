@@ -99,7 +99,7 @@ export const testimonials = [
     position: "CEO, TechVision",
     content: "Neongrowlabs transformed our digital presence completely. Their strategic approach to Instagram management doubled our engagement in just 3 months.",
     rating: 5,
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop"
+    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&h=150&fit=crop&q=80"
   },
   {
     id: 2,
@@ -107,7 +107,7 @@ export const testimonials = [
     position: "Founder, StartupHub",
     content: "The web development team delivered beyond expectations. Our new platform is fast, beautiful, and exactly what we envisioned.",
     rating: 5,
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop"
+    image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=150&h=150&fit=crop&q=80"
   },
   {
     id: 3,
@@ -115,7 +115,7 @@ export const testimonials = [
     position: "Marketing Director, GrowthCo",
     content: "Their Meta Ads campaigns generated the highest ROI we've ever seen. Professional, data-driven, and results-focused.",
     rating: 5,
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop"
+    image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=150&h=150&fit=crop&q=80"
   }
 ];
 
