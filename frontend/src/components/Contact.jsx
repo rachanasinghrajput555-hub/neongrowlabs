@@ -17,9 +17,26 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Here you would typically send the form data to your backend
-    toast.success('Thank you! We will get back to you soon.');
-    setFormData({ name: '', email: '', phone: '', message: '' });
+    
+    // Create email content
+    const subject = encodeURIComponent(`New Contact Form Submission from ${formData.name}`);
+    const body = encodeURIComponent(
+      `Name: ${formData.name}\n` +
+      `Email: ${formData.email}\n` +
+      `Phone: ${formData.phone}\n\n` +
+      `Message:\n${formData.message}`
+    );
+    
+    // Open default email client with pre-filled information
+    window.location.href = `mailto:neongrowlabs@gmail.com?subject=${subject}&body=${body}`;
+    
+    // Show success message
+    toast.success('Opening your email client to send the message...');
+    
+    // Clear form
+    setTimeout(() => {
+      setFormData({ name: '', email: '', phone: '', message: '' });
+    }, 1000);
   };
 
   const handleChange = (e) => {
