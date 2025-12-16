@@ -185,14 +185,14 @@ const Contact = () => {
                 <h3 className="font-semibold mb-4">Follow Us</h3>
                 <div className="flex gap-4">
                   <a
-                    href={contact.social.linkedin}
+                    href={contact.social.instagram}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white hover:scale-110 transition-transform"
-                    data-testid="contact-linkedin-link"
-                    aria-label="LinkedIn"
+                    className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full flex items-center justify-center text-white hover:scale-110 transition-transform"
+                    data-testid="contact-instagram-link"
+                    aria-label="Instagram"
                   >
-                    <Linkedin size={24} />
+                    <Instagram size={24} />
                   </a>
                 </div>
               </CardContent>
