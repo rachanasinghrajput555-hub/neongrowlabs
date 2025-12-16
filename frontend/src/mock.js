@@ -127,7 +127,7 @@ export const about = {
     { label: "Projects Completed", value: "200+" },
     { label: "Happy Clients", value: "150+" },
     { label: "Team Members", value: "25+" },
-    { label: "Years Experience", value: "8+" }
+    { label: "Years Experience", value: "5+" }
   ]
 };
 
