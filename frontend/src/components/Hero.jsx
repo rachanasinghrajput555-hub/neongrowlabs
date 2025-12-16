@@ -68,7 +68,7 @@ const Hero = () => {
               <div className="text-sm md:text-base text-gray-600 uppercase tracking-wide">Clients</div>
             </div>
             <div className="text-center" data-testid="hero-stat-3">
-              <div className="text-4xl md:text-5xl font-bold text-blue-600 mb-2">8+</div>
+              <div className="text-4xl md:text-5xl font-bold text-blue-600 mb-2">5+</div>
               <div className="text-sm md:text-base text-gray-600 uppercase tracking-wide">Years</div>
             </div>
           </div>
