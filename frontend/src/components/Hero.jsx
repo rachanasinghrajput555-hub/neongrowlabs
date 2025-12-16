@@ -26,16 +26,16 @@ const Hero = () => {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/60 backdrop-blur-sm rounded-full fade-in shadow-sm" data-testid="hero-badge">
             <Sparkles size={16} className="text-indigo-600" />
-            <span className="text-sm font-medium text-gray-700">Digital Excellence Since 2016</span>
+            <span className="text-sm font-medium text-gray-700">Digital Excellence Since 2020</span>
           </div>
 
           {/* Main Heading */}
-          <h1 className="brand-display fade-in-up stagger-1" data-testid="hero-title">
-            {heroData.title}
+          <h1 className="text-6xl md:text-7xl lg:text-8xl font-extrabold uppercase tracking-tight leading-none fade-in-up stagger-1" data-testid="hero-title">
+            Neongrowlabs
           </h1>
 
           {/* Subtitle */}
-          <h2 className="text-5xl md:text-6xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600 fade-in-up stagger-2" data-testid="hero-subtitle">
+          <h2 className="text-4xl md:text-5xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600 fade-in-up stagger-2" data-testid="hero-subtitle">
             {heroData.subtitle}
           </h2>
 
