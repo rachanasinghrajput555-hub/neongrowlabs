@@ -95,7 +95,7 @@ export const portfolio = [
 export const testimonials = [
   {
     id: 1,
-    name: "Sarah Mitchell",
+    name: "Priya Sharma",
     position: "CEO, TechVision",
     content: "Neongrowlabs transformed our digital presence completely. Their strategic approach to Instagram management doubled our engagement in just 3 months.",
     rating: 5,
@@ -103,7 +103,7 @@ export const testimonials = [
   },
   {
     id: 2,
-    name: "Michael Chen",
+    name: "Rajesh Kumar",
     position: "Founder, StartupHub",
     content: "The web development team delivered beyond expectations. Our new platform is fast, beautiful, and exactly what we envisioned.",
     rating: 5,
@@ -111,7 +111,7 @@ export const testimonials = [
   },
   {
     id: 3,
-    name: "Emma Rodriguez",
+    name: "Ananya Patel",
     position: "Marketing Director, GrowthCo",
     content: "Their Meta Ads campaigns generated the highest ROI we've ever seen. Professional, data-driven, and results-focused.",
     rating: 5,
