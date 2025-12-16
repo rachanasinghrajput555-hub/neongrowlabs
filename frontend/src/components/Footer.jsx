@@ -1,5 +1,5 @@
 import React from 'react';
-import { Linkedin, Heart } from 'lucide-react';
+import { Instagram, Heart } from 'lucide-react';
 import { contact } from '../mock';
 
 const Footer = () => {
