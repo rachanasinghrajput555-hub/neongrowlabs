@@ -70,7 +70,7 @@ export const portfolio = [
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71",
     categories: ["Web Development", "E-Commerce"],
     bgColor: "mid-blue",
-    metrics: { conversion: "+180%", revenue: "+$500K", speed: "0.8s" }
+    metrics: { conversion: "+180%", revenue: "+₹500K", speed: "0.8s" }
   },
   {
     id: 3,
