@@ -88,14 +88,14 @@ const Footer = () => {
             {/* Social Media */}
             <div className="flex gap-3 mt-4">
               <a
-                href={contact.social.linkedin}
+                href={contact.social.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors"
-                data-testid="footer-linkedin"
-                aria-label="LinkedIn"
+                data-testid="footer-instagram"
+                aria-label="Instagram"
               >
-                <Linkedin size={20} />
+                <Instagram size={20} />
               </a>
             </div>
           </div>
