@@ -185,16 +185,6 @@ const Contact = () => {
                 <h3 className="font-semibold mb-4">Follow Us</h3>
                 <div className="flex gap-4">
                   <a
-                    href={contact.social.instagram}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full flex items-center justify-center text-white hover:scale-110 transition-transform"
-                    data-testid="contact-instagram-link"
-                    aria-label="Instagram"
-                  >
-                    <Instagram size={24} />
-                  </a>
-                  <a
                     href={contact.social.linkedin}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -203,16 +193,6 @@ const Contact = () => {
                     aria-label="LinkedIn"
                   >
                     <Linkedin size={24} />
-                  </a>
-                  <a
-                    href={contact.social.twitter}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-12 h-12 bg-sky-500 rounded-full flex items-center justify-center text-white hover:scale-110 transition-transform"
-                    data-testid="contact-twitter-link"
-                    aria-label="Twitter"
-                  >
-                    <Twitter size={24} />
                   </a>
                 </div>
               </CardContent>
