@@ -88,16 +88,6 @@ const Footer = () => {
             {/* Social Media */}
             <div className="flex gap-3 mt-4">
               <a
-                href={contact.social.instagram}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors"
-                data-testid="footer-instagram"
-                aria-label="Instagram"
-              >
-                <Instagram size={20} />
-              </a>
-              <a
                 href={contact.social.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -106,16 +96,6 @@ const Footer = () => {
                 aria-label="LinkedIn"
               >
                 <Linkedin size={20} />
-              </a>
-              <a
-                href={contact.social.twitter}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors"
-                data-testid="footer-twitter"
-                aria-label="Twitter"
-              >
-                <Twitter size={20} />
               </a>
             </div>
           </div>
