@@ -8,7 +8,7 @@ import { Check, ChevronDown, ChevronUp } from 'lucide-react';
 
 const Pricing = () => {
   const [showAll, setShowAll] = useState(false);
-  const INITIAL_CATEGORIES = 3; // Show first 3 categories initially
+  const INITIAL_CATEGORIES = 2; // Show first 2 categories initially
   
   const getIcon = (iconName) => {
     const Icon = LucideIcons[iconName];
