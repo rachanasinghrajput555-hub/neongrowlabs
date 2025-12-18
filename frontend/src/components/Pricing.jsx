@@ -59,7 +59,9 @@ const Pricing = () => {
 
         {/* Pricing Categories */}
         <div className="space-y-20">
-          {pricingPlans.categories.map((category, catIndex) => (
+          {pricingPlans.categories
+            .slice(0, showAll ? pricingPlans.categories.length : INITIAL_CATEGORIES)
+            .map((category, catIndex) => (
             <div key={category.id} className="fade-in-up" data-testid={`pricing-category-${category.id}`}>
               {/* Category Header */}
               <div className="text-center mb-10">
