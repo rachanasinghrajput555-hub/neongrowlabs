@@ -50,6 +50,13 @@ export const services = [
     description: "Comprehensive marketing strategies to grow your online presence and drive conversions.",
     icon: "TrendingUp",
     color: "mid-yellow"
+  },
+  {
+    id: 7,
+    title: "AI Agents",
+    description: "Intelligent automation solutions powered by AI to streamline workflows and enhance customer interactions.",
+    icon: "Bot",
+    color: "mid-purple"
   }
 ];
 
