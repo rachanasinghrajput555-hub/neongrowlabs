@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { pricingPlans } from '../mock';
 import { Card, CardContent } from './ui/card';
 import { Button } from './ui/button';
 import { Badge } from './ui/badge';
 import * as LucideIcons from 'lucide-react';
-import { Check } from 'lucide-react';
+import { Check, ChevronDown, ChevronUp } from 'lucide-react';
 
 const Pricing = () => {
+  const [showAll, setShowAll] = useState(false);
+  const INITIAL_CATEGORIES = 3; // Show first 3 categories initially
+  
   const getIcon = (iconName) => {
     const Icon = LucideIcons[iconName];
     return Icon ? <Icon size={28} /> : <LucideIcons.Sparkles size={28} />;
