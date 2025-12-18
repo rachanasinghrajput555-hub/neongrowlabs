@@ -148,6 +148,31 @@ const Pricing = () => {
           ))}
         </div>
 
+        {/* Show More/Less Button */}
+        {pricingPlans.categories.length > INITIAL_CATEGORIES && (
+          <div className="mt-16 text-center fade-in-up">
+            <Button
+              onClick={() => setShowAll(!showAll)}
+              size="lg"
+              variant="outline"
+              className="button-3d border-2 border-indigo-600 text-indigo-600 hover:bg-indigo-600 hover:text-white px-8 py-6 text-lg"
+              data-testid="pricing-show-more-button"
+            >
+              {showAll ? (
+                <>
+                  Show Less Pricing Plans
+                  <ChevronUp className="ml-2" size={20} />
+                </>
+              ) : (
+                <>
+                  Show More Pricing Plans ({pricingPlans.categories.length - INITIAL_CATEGORIES} more)
+                  <ChevronDown className="ml-2" size={20} />
+                </>
+              )}
+            </Button>
+          </div>
+        )}
+
         {/* Bottom CTA */}
         <div className="mt-20 text-center bg-gradient-to-r from-indigo-50 to-purple-50 rounded-3xl p-12 fade-in-up">
           <h3 className="text-3xl font-bold mb-4">Need a Custom Solution?</h3>
