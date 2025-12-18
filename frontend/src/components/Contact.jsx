@@ -134,10 +134,11 @@ const Contact = () => {
 
                 <Button
                   type="submit"
-                  className="button-3d w-full bg-black text-white hover:bg-gray-800 py-6"
+                  disabled={isSubmitting}
+                  className="button-3d w-full bg-black text-white hover:bg-gray-800 py-6 disabled:opacity-50 disabled:cursor-not-allowed"
                   data-testid="contact-submit-button"
                 >
-                  Send Message
+                  {isSubmitting ? 'Sending...' : 'Send Message'}
                 </Button>
               </form>
             </CardContent>
