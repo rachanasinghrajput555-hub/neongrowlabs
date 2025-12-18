@@ -138,6 +138,330 @@ export const about = {
   ]
 };
 
+export const pricingPlans = {
+  title: "Neongrowlabs – Pricing Plans",
+  subtitle: "Transparent pricing. Real results. Scalable growth.",
+  categories: [
+    {
+      id: 1,
+      name: "Instagram Reels & YouTube Video Editing",
+      icon: "Video",
+      plans: [
+        {
+          name: "Starter Edit",
+          price: "₹2,999",
+          period: "month",
+          features: [
+            "Up to 12 short videos",
+            "Basic cuts & transitions",
+            "Music sync",
+            "Text & captions",
+            "1 revision"
+          ],
+          color: "purple"
+        },
+        {
+          name: "Growth Edit",
+          price: "₹5,999",
+          period: "month",
+          features: [
+            "Up to 30 short videos",
+            "Advanced cuts & transitions",
+            "Subtitles (auto + styled)",
+            "Trend-based editing",
+            "2 revisions"
+          ],
+          popular: true,
+          color: "blue"
+        },
+        {
+          name: "Pro Creator",
+          price: "₹9,999",
+          period: "month",
+          features: [
+            "Up to 60 videos",
+            "High-retention editing",
+            "Custom animations & effects",
+            "Viral hooks (first 3 sec)",
+            "Unlimited revisions"
+          ],
+          color: "pink"
+        }
+      ]
+    },
+    {
+      id: 2,
+      name: "Meta Ads Management",
+      subtitle: "Ad budget not included",
+      icon: "Target",
+      plans: [
+        {
+          name: "Basic Ads",
+          price: "₹4,999",
+          period: "month",
+          features: [
+            "1 campaign setup",
+            "Audience targeting",
+            "2 ad creatives",
+            "Weekly optimization",
+            "Performance report"
+          ],
+          color: "blue"
+        },
+        {
+          name: "Performance Ads",
+          price: "₹9,999",
+          period: "month",
+          features: [
+            "Up to 3 campaigns",
+            "Funnel setup (Leads/Sales)",
+            "A/B testing",
+            "Creative optimization",
+            "Detailed reporting"
+          ],
+          popular: true,
+          color: "purple"
+        },
+        {
+          name: "Scaling Ads",
+          price: "₹19,999",
+          period: "month",
+          features: [
+            "Unlimited campaigns",
+            "Retargeting & lookalike audiences",
+            "Budget scaling strategy",
+            "Daily optimization",
+            "ROI-focused reporting"
+          ],
+          color: "green"
+        }
+      ]
+    },
+    {
+      id: 3,
+      name: "Website Development",
+      subtitle: "One-Time Payment",
+      icon: "Code",
+      plans: [
+        {
+          name: "Basic Website",
+          price: "₹7,999",
+          period: "one-time",
+          features: [
+            "1–3 pages",
+            "Mobile responsive",
+            "Contact form",
+            "Basic SEO",
+            "7-day delivery"
+          ],
+          color: "pink"
+        },
+        {
+          name: "Business Website",
+          price: "₹14,999",
+          period: "one-time",
+          features: [
+            "5–8 pages",
+            "Custom UI/UX",
+            "Speed optimization",
+            "SEO-friendly structure",
+            "WhatsApp integration"
+          ],
+          popular: true,
+          color: "blue"
+        },
+        {
+          name: "Premium Website",
+          price: "₹29,999",
+          period: "one-time",
+          features: [
+            "Unlimited pages",
+            "Advanced animations",
+            "Landing pages",
+            "Blog / CMS",
+            "30-day support"
+          ],
+          color: "purple"
+        }
+      ]
+    },
+    {
+      id: 4,
+      name: "App Development",
+      icon: "Smartphone",
+      plans: [
+        {
+          name: "Basic App",
+          price: "₹49,999",
+          period: "one-time",
+          features: [
+            "Single platform (Android/iOS)",
+            "Basic UI",
+            "Core features",
+            "Admin panel"
+          ],
+          color: "green"
+        },
+        {
+          name: "Advanced App",
+          price: "₹99,999",
+          period: "one-time",
+          features: [
+            "Android + iOS",
+            "Custom UI/UX",
+            "API integration",
+            "Push notifications"
+          ],
+          popular: true,
+          color: "blue"
+        },
+        {
+          name: "Enterprise App",
+          price: "₹1,99,999+",
+          period: "one-time",
+          features: [
+            "Full custom solution",
+            "Scalable backend",
+            "Security & performance optimization",
+            "Maintenance support"
+          ],
+          color: "purple"
+        }
+      ]
+    },
+    {
+      id: 5,
+      name: "Instagram Page Handling",
+      icon: "Instagram",
+      plans: [
+        {
+          name: "Starter",
+          price: "₹4,999",
+          period: "month",
+          features: [
+            "12 posts / reels",
+            "Caption & hashtag strategy",
+            "Basic engagement support"
+          ],
+          color: "pink"
+        },
+        {
+          name: "Growth",
+          price: "₹8,999",
+          period: "month",
+          features: [
+            "20 posts / reels",
+            "DM & comment handling",
+            "Growth strategy",
+            "Monthly insights"
+          ],
+          popular: true,
+          color: "purple"
+        },
+        {
+          name: "Brand Authority",
+          price: "₹14,999",
+          period: "month",
+          features: [
+            "30+ posts / reels",
+            "Full page management",
+            "Trend research",
+            "Influencer collaboration guidance"
+          ],
+          color: "blue"
+        }
+      ]
+    },
+    {
+      id: 6,
+      name: "Digital Marketing",
+      subtitle: "Complete Growth System",
+      icon: "TrendingUp",
+      plans: [
+        {
+          name: "Starter Marketing",
+          price: "₹7,999",
+          period: "month",
+          features: [
+            "Social media strategy",
+            "Content planning",
+            "Basic analytics"
+          ],
+          color: "yellow"
+        },
+        {
+          name: "Growth Marketing",
+          price: "₹14,999",
+          period: "month",
+          features: [
+            "Ads + content strategy",
+            "Lead generation funnel",
+            "Conversion optimization"
+          ],
+          popular: true,
+          color: "blue"
+        },
+        {
+          name: "Scale Marketing",
+          price: "₹24,999",
+          period: "month",
+          features: [
+            "Multi-platform marketing",
+            "Retargeting campaigns",
+            "Weekly performance review",
+            "Dedicated manager"
+          ],
+          color: "purple"
+        }
+      ]
+    },
+    {
+      id: 7,
+      name: "Combo Packages",
+      subtitle: "High Conversion",
+      icon: "Sparkles",
+      plans: [
+        {
+          name: "Startup Boost",
+          price: "₹14,999",
+          period: "month",
+          features: [
+            "Instagram handling",
+            "Reel editing (20 videos)",
+            "Basic ads management"
+          ],
+          color: "green"
+        },
+        {
+          name: "Business Growth",
+          price: "₹29,999",
+          period: "month",
+          features: [
+            "Full social media management",
+            "Meta ads",
+            "Video editing",
+            "Monthly reports"
+          ],
+          popular: true,
+          color: "blue"
+        },
+        {
+          name: "Brand Domination",
+          price: "₹49,999",
+          period: "month",
+          features: [
+            "Everything included",
+            "Website support",
+            "Ads scaling",
+            "Priority support"
+          ],
+          color: "purple"
+        }
+      ]
+    }
+  ]
+};
+
 export const contact = {
   email: "neongrowlabs@gmail.com",
   phone: "+91 7838399405",
