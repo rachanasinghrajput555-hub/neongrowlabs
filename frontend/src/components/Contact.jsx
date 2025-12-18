@@ -6,6 +6,10 @@ import { Textarea } from './ui/textarea';
 import { Card, CardContent } from './ui/card';
 import { Mail, Phone, MapPin, Instagram } from 'lucide-react';
 import { toast } from 'sonner';
+import axios from 'axios';
+
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
+const API = `${BACKEND_URL}/api`;
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -14,29 +18,27 @@ const Contact = () => {
     phone: '',
     message: ''
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsSubmitting(true);
     
-    // Create email content
-    const subject = encodeURIComponent(`New Contact Form Submission from ${formData.name}`);
-    const body = encodeURIComponent(
-      `Name: ${formData.name}\n` +
-      `Email: ${formData.email}\n` +
-      `Phone: ${formData.phone}\n\n` +
-      `Message:\n${formData.message}`
-    );
-    
-    // Open default email client with pre-filled information
-    window.location.href = `mailto:neongrowlabs@gmail.com?subject=${subject}&body=${body}`;
-    
-    // Show success message
-    toast.success('Opening your email client to send the message...');
-    
-    // Clear form
-    setTimeout(() => {
+    try {
+      // Send message to backend
+      await axios.post(`${API}/contact`, formData);
+      
+      // Show success message
+      toast.success('Thank you! Your message has been sent successfully. We will get back to you soon.');
+      
+      // Clear form
       setFormData({ name: '', email: '', phone: '', message: '' });
-    }, 1000);
+    } catch (error) {
+      console.error('Error sending message:', error);
+      toast.error('Sorry, there was an error sending your message. Please try again or contact us directly via email.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e) => {
