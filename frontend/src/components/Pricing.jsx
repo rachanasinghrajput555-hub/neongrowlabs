@@ -55,6 +55,11 @@ const Pricing = () => {
           <p className="text-xl text-gray-600 fade-in-up stagger-1" data-testid="pricing-subtitle">
             {pricingPlans.subtitle}
           </p>
+          <div className="mt-4 inline-flex items-center gap-2 px-4 py-2 bg-yellow-50 border border-yellow-200 rounded-full fade-in-up stagger-2">
+            <span className="text-sm text-yellow-800 font-medium">
+              ⚠️ Note: Real-life pricing can vary based on project requirements
+            </span>
+          </div>
         </div>
 
         {/* Pricing Categories */}
